@@ -1,1 +1,3 @@
-![Uploading Screenshot 2024-03-28 234625.png…]()
+pREVIEW OF THE PROJECT
+
+![Screenshot 2024-03-28 234625](https://github.com/KOUSHAMBHA15IT/ToDo-List/assets/122219149/56e3eb20-05ff-4335-897c-e9169468f16b)
