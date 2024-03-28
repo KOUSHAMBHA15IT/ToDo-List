@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+#con{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(160deg,#164d5d,#777777);
+    padding: 10px;
+}
+
+#todo{
+    width: 100%;
+    max-width: 540px;
+    background: #6168e0;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+#todo h2{
+    font-size: 25px;
+    color: #0d3c4a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+#todo h2 img{
+   width: 30px;
+   margin-left: 10px; 
+}
+#row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #b0b0b1;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#inbox{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 30px;
+}
+
+#row button{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #010000;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#todo ul li{
+    list-style: none;
+    font-size: 15px;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+#todo ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;
+}
+#todo ul li.checked{
+    color: #0d3c4a;
+    text-decoration: line-through;
+}
+#todo ul li.checked::before{
+    background-image: url(checked.png);
+}
+#todo ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size:20px ;
+    color: rgb(8, 50, 36);
+    line-height: 40px;
+    text-align: center;
+}
+#todo ul li span:hover{
+    background: #bde877;
+    border-radius: 50%;
+}
+
